@@ -104,8 +104,946 @@ main{max-width:1550px;margin:22px auto;padding:0 22px 38px}.panel{background:var
    Para corrigir ou incluir pessoas, altere a lista DATA abaixo.
    Mantenha os nomes dos campos e uma virgula entre cada registro.
    ========================================================================== */
-const DATA=[{"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Gerência de Expansão MT-BT", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Riller Marinho Ramos", "Matrícula": "4005600", "E-mail": "riller.ramos@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Centro Sul", "Sigla": "EXP-CS", "Cargo / Função": "Coordenador", "Nome": "Bruno Silva Abdalla", "Matrícula": "4002733", "E-mail": "bruno.abdalla@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Centro Sul", "Sigla": "EXP-CS", "Cargo / Função": "Engenheiro Centro Sul", "Nome": "Marcos Araujo", "Matrícula": "", "E-mail": "marcos.araujo2@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Baixada / Oeste", "Sigla": "EXP-BX", "Cargo / Função": "Coordenador", "Nome": "Renato da Silva Lopes", "Matrícula": "4001331", "E-mail": "renatodasilva@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Baixada / Oeste", "Sigla": "EXP-BX", "Cargo / Função": "Engenheiro Baixada", "Nome": "Lucas Rapozo", "Matrícula": "", "E-mail": "lucas.rapozo@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Centro Sul / Leste", "Sigla": "EXP-LE", "Cargo / Função": "Coordenador", "Nome": "Leonardo França", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Centro Sul / Leste", "Sigla": "EXP-LE", "Cargo / Função": "Engenheiro Leste", "Nome": "Rafael Levy", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Oeste", "Sigla": "EXP-OE", "Cargo / Função": "Coordenador", "Nome": "Pedro Henrique Nóbrega de Queiroz", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Oeste", "Sigla": "EXP-OE", "Cargo / Função": "Engenheiro Oeste", "Nome": "Tiago Funayama Cople", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Vale", "Sigla": "EXP-VP", "Cargo / Função": "Coordenador", "Nome": "Eymile Tavares", "Matrícula": "4004547", "E-mail": "eymile.tavares@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Vale", "Sigla": "EXP-VP", "Cargo / Função": "Engenheiro Barra do Piraí", "Nome": "Wendell Paula", "Matrícula": "", "E-mail": "wendell.paula@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Vale", "Sigla": "EXP-VP", "Cargo / Função": "Engenheiro Três Rios", "Nome": "Laurecir Santos", "Matrícula": "", "E-mail": "laurecir.santos@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Expansão", "Coordenação / Área": "Coordenação Vale", "Sigla": "EXP-VP", "Cargo / Função": "Engenheiro Volta Redonda", "Nome": "Douglas Barreto", "Matrícula": "", "E-mail": "douglas.barreto@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Gerência do Subterrâneo", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Leonardo Bersot Barbosa Gois", "Matrícula": "4008761", "E-mail": "leonardo.gois@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação Subterrâneo MT", "Sigla": "SUB-MT", "Cargo / Função": "Coordenador", "Nome": "Fillipe Marques Gentil", "Matrícula": "4003927", "E-mail": "fillipe.gentil@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação Subterrâneo MT", "Sigla": "SUB-MT", "Cargo / Função": "Engenheiro", "Nome": "Rafael da Silva Klippel Bastos", "Matrícula": "4012208", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação Subterrâneo BT NET", "Sigla": "SUB-BT", "Cargo / Função": "Coordenador", "Nome": "Jose Fernando da Silva Goncalves Junior", "Matrícula": "4002720", "E-mail": "jose.goncalves.junior@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação Subterrâneo BT NET", "Sigla": "SUB-BT", "Cargo / Função": "Engenheiro", "Nome": "Leonardo de Oliveira Verderio", "Matrícula": "4001926", "E-mail": "leonardo.verderio@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação de Qualidade Subterrâneo", "Sigla": "SUB-QD", "Cargo / Função": "Coordenador", "Nome": "Daniel Henrique de Figueiredo Alves", "Matrícula": "4011458", "E-mail": "daniel.alves@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência do Subterrâneo", "Coordenação / Área": "Coordenação de Qualidade Subterrâneo", "Sigla": "SUB-QD", "Cargo / Função": "Engenheiro", "Nome": "Albert Rodrigues Bizzo", "Matrícula": "4011503", "E-mail": "albert.bizzo@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Operação e Manutenção Centro Sul + Sudoeste", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Bruno Almeida da Silva", "Matrícula": "4010503", "E-mail": "bruno.almeida@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Operação Centro Sul", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Matheus Aquino da Silveira", "Matrícula": "4012537", "E-mail": "matheus.silveira@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Manutenção Centro Sul", "Sigla": "MAN-CS", "Cargo / Função": "Responsável", "Nome": "Abraao Stellet Moret Volotao", "Matrícula": "4012265", "E-mail": "abraao.volotao@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Manutenção Centro Sul", "Sigla": "MAN-CS", "Cargo / Função": "Engenheiro", "Nome": "Victor Lobato Arantes", "Matrícula": "4011846", "E-mail": "victor.arantes@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Operação Sudoeste", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Romulo Amaral Silva", "Matrícula": "4007097", "E-mail": "romulo.silva@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Manutenção Sudoeste", "Sigla": "MAN-BA", "Cargo / Função": "Responsável", "Nome": "Richard Ribeiro Frota Santana", "Matrícula": "4005163", "E-mail": "richard.santana@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção CS/SO", "Coordenação / Área": "Manutenção Sudoeste", "Sigla": "MAN-BA", "Cargo / Função": "Engenheiro", "Nome": "Luis Fernando Oliveira Guedes", "Matrícula": "4011921", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Operação e Manutenção Vale + Leste", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Alfredo Joao de Brito", "Matrícula": "4010263", "E-mail": "", "Observação": "Documento denomina Gerência Vale"}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Operação Leste", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Marcio da Silva Batista", "Matrícula": "4010575", "E-mail": "marcio.batista2@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Manutenção Leste", "Sigla": "MAN-LE", "Cargo / Função": "Responsável", "Nome": "Lorena Muniz", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Manutenção Leste", "Sigla": "MAN-LE", "Cargo / Função": "Engenheiro", "Nome": "Fabricio Jhonny Silva de Almeida", "Matrícula": "4011800", "E-mail": "fabricio.almeida2@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Operação Vale", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Monique Ianne Jordao Ferreira", "Matrícula": "4003887", "E-mail": "monique.ferreira@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Operação Vale", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Marcelo Thome", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Manutenção Vale", "Sigla": "MAN-VP", "Cargo / Função": "Responsável", "Nome": "Diogo Alves Paranhos", "Matrícula": "4012495", "E-mail": "diogo.paranhos@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção LE/VP", "Coordenação / Área": "Manutenção Vale", "Sigla": "MAN-VP", "Cargo / Função": "Engenheiro", "Nome": "Rogerio Ribeiro da Cruz", "Matrícula": "3144143", "E-mail": "rogerior@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Operação e Manutenção Baixada + Oeste", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Sabino", "Matrícula": "", "E-mail": "", "Observação": "Documento denomina Gerência Norte"}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Operação Baixada", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Liliane Borba Cruz Rodrigues", "Matrícula": "4011074", "E-mail": "liliane.rodrigues@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Operação Baixada", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Gabriel Mendes de Paula", "Matrícula": "4011910", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Manutenção Baixada", "Sigla": "MAN-BX", "Cargo / Função": "Responsável", "Nome": "Em definição", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Manutenção Baixada", "Sigla": "MAN-BX", "Cargo / Função": "Engenheiro", "Nome": "Ido Bomfim de Sant Anna", "Matrícula": "3154378", "E-mail": "ido.santana@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Operação Oeste", "Sigla": "", "Cargo / Função": "Responsável", "Nome": "Luiz Santana", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Operação Oeste", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Diogo Ruas Vaz", "Matrícula": "4011794", "E-mail": "diogo.vaz2@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Manutenção Oeste", "Sigla": "MAN-OE", "Cargo / Função": "Responsável", "Nome": "Wallace Coutinho Wollet", "Matrícula": "4006831", "E-mail": "wallace.wollet@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência de Manutenção BX/OE", "Coordenação / Área": "Manutenção Oeste", "Sigla": "MAN-OE", "Cargo / Função": "Engenheiro", "Nome": "Gabriel Tardem", "Matrícula": "", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Gerência Expansão AT e Automação - OTA", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Thiago Pires Viula", "Matrícula": "4000158", "E-mail": "thiago.viula@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação de Construção AT", "Sigla": "OTAC", "Cargo / Função": "Coordenador", "Nome": "Talita Pereira Silva Gonzaga", "Matrícula": "4002702", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação de Construção AT", "Sigla": "OTAC", "Cargo / Função": "Engenheiro", "Nome": "Roberto Focetola Filho", "Matrícula": "4002033", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação de Construção AT", "Sigla": "OTAC", "Cargo / Função": "Engenheiro", "Nome": "Julio Cesar da Costa Marins", "Matrícula": "4005484", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação Automação", "Sigla": "OTAA", "Cargo / Função": "Coordenador", "Nome": "Tiago Lucas Oliveira da Silva", "Matrícula": "4005398", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação Automação", "Sigla": "OTAA", "Cargo / Função": "Engenheiro", "Nome": "Igor da Rocha Brito", "Matrícula": "4005584", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação Automação", "Sigla": "OTAA", "Cargo / Função": "Engenheiro", "Nome": "Juliana Lima do Nascimento", "Matrícula": "4004546", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Expansão AT e Automação - OTA", "Coordenação / Área": "Coordenação Automação", "Sigla": "OTAA", "Cargo / Função": "Engenheiro", "Nome": "Rafael Correa Alfradique", "Matrícula": "4010140", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Gerência Manutenção Alta Tensão", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Filipe Marques Pereira", "Matrícula": "4002630", "E-mail": "filipe.pereira@light.com.br", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Coordenador", "Nome": "Thalisson de Lima Cunha", "Matrícula": "4011636", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Nicolas Alves Amaral", "Matrícula": "4004933", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Marcus Vinicius Gouvea Gomes", "Matrícula": "4000043", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Vitor Hugo Mendonca do Nascimento", "Matrícula": "4004944", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Bruno Marinho Sant Ana", "Matrícula": "4001362", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Aluizio Alberto Peixoto Soares", "Matrícula": "3096076", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação de Subestações Capital", "Sigla": "MAN-AT", "Cargo / Função": "Engenheiro", "Nome": "Julio Cesar da Costa Peres", "Matrícula": "3150127", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Geziel Pereira da Silva", "Matrícula": "4002882", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Adilson da Costa Menezes Junior", "Matrícula": "3149307", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Jorge Felipe Alves Gomes", "Matrícula": "4002879", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Paulo Cesar de Souza", "Matrícula": "3135306", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Mauricio de Oliveira Barros", "Matrícula": "4004375", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Wagner Luiz Ortiz Marques", "Matrícula": "4003732", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Claudia Maria Graca Araujo", "Matrícula": "3157083", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Bianca Martins Lopes", "Matrícula": "4003593", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Lucas Gomes dos Santos", "Matrícula": "4010763", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Marcio Aurelio Estevao Cerqueira Junior", "Matrícula": "4008774", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Rafael Monteiro Lopes", "Matrícula": "4008456", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Gerência Manutenção Alta Tensão", "Coordenação / Área": "Coordenação Subestações Metropolitana", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Josemar Rodrigues da Silva", "Matrícula": "3150321", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Engenharia", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Juliana Vieira da Silva Galiza", "Matrícula": "4001316", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Dimensionamento Rede MT BT", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Mabelle Cristina Marinho da Rocha", "Matrícula": "4009737", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Dimensionamento Rede MT BT", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Ricardo Linhares Menezes", "Matrícula": "3143210", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Estudos Projetos Elétricos", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Romulo Toledo Dias", "Matrícula": "4010835", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Estudos Projetos Elétricos", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Arthur Costa Cavalcante", "Matrícula": "4011964", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Julliana Carolina Passarelli M Costa", "Matrícula": "4008196", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Luis Felipe Puzzi Nicolau", "Matrícula": "4010919", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Engenharia", "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Joao Vitor Ribeiro de Carvalho", "Matrícula": "4011810", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Automação", "Coordenação / Área": "Automação", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Tiago Lucas Oliveira da Silva", "Matrícula": "4005398", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Automação", "Coordenação / Área": "Automação", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Matheus Reis Duarte Monteiro", "Matrícula": "4009475", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Comercial", "Coordenação / Área": "Comercial", "Sigla": "", "Cargo / Função": "Gerente", "Nome": "Fernando Maruyama Dal Maso", "Matrícula": "4006282", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Comercial", "Coordenação / Área": "Blindagem", "Sigla": "", "Cargo / Função": "Coordenador", "Nome": "Murilo Savio Barbosa", "Matrícula": "4011885", "E-mail": "", "Observação": ""}, {"Gerência consolidada": "Comercial", "Coordenação / Área": "Blindagem", "Sigla": "", "Cargo / Função": "Engenheiro", "Nome": "Diogo Ferreira Pereira", "Matrícula": "4006291", "E-mail": "", "Observação": ""}];
+/* ==========================================================================
+   1. CADASTRO DE PESSOAS
+   ==========================================================================
+   COMO ALTERAR:
+   - Para modificar uma pessoa, procure pelo nome usando Ctrl + F.
+   - Altere somente o texto depois dos dois-pontos (:), mantendo as aspas.
+   - Para incluir uma pessoa, copie um cadastro completo e ajuste os campos.
+   - Para excluir uma pessoa, apague o bloco inteiro entre { e }, incluindo a
+     virgula que aparece depois do bloco, quando houver.
+   - Os registros estao separados por GERENCIA e COORDENACAO / AREA.
+   ========================================================================== */
+const DATA = [
+  // ========================================================================
+  // GERENCIA: GERÊNCIA DE EXPANSÃO
+  // ========================================================================
 
+  // COORDENACAO / AREA: Gerência de Expansão MT-BT
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Gerência de Expansão MT-BT",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Riller Marinho Ramos",
+    "Matrícula": "4005600",
+    "E-mail": "riller.ramos@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Centro Sul
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Centro Sul",
+    "Sigla": "EXP-CS",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Bruno Silva Abdalla",
+    "Matrícula": "4002733",
+    "E-mail": "bruno.abdalla@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Centro Sul",
+    "Sigla": "EXP-CS",
+    "Cargo / Função": "Engenheiro Centro Sul",
+    "Nome": "Marcos Araujo",
+    "Matrícula": "",
+    "E-mail": "marcos.araujo2@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Baixada / Oeste
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Baixada / Oeste",
+    "Sigla": "EXP-BX",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Renato da Silva Lopes",
+    "Matrícula": "4001331",
+    "E-mail": "renatodasilva@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Baixada / Oeste",
+    "Sigla": "EXP-BX",
+    "Cargo / Função": "Engenheiro Baixada",
+    "Nome": "Lucas Rapozo",
+    "Matrícula": "",
+    "E-mail": "lucas.rapozo@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Centro Sul / Leste
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Centro Sul / Leste",
+    "Sigla": "EXP-LE",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Leonardo França",
+    "Matrícula": "",
+    "E-mail": "leonardo.reis@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Centro Sul / Leste",
+    "Sigla": "EXP-LE",
+    "Cargo / Função": "Engenheiro Leste",
+    "Nome": "Rafael Levy",
+    "Matrícula": "",
+    "E-mail": "rafael.santos8@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Oeste
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Oeste",
+    "Sigla": "EXP-OE",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Pedro Henrique Nóbrega de Queiroz",
+    "Matrícula": "",
+    "E-mail": "pedro.queiroz3@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Oeste",
+    "Sigla": "EXP-OE",
+    "Cargo / Função": "Engenheiro Oeste",
+    "Nome": "Tiago Funayama Cople",
+    "Matrícula": "",
+    "E-mail": "tiago.cople@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Vale
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Vale",
+    "Sigla": "EXP-VP",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Eymile Tavares",
+    "Matrícula": "4004547",
+    "E-mail": "eymile.tavares@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Vale",
+    "Sigla": "EXP-VP",
+    "Cargo / Função": "Engenheiro Barra do Piraí",
+    "Nome": "Wendell Paula",
+    "Matrícula": "",
+    "E-mail": "wendell.paula@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Vale",
+    "Sigla": "EXP-VP",
+    "Cargo / Função": "Engenheiro Três Rios",
+    "Nome": "Laurecir Santos",
+    "Matrícula": "",
+    "E-mail": "laurecir.santos@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Expansão",
+    "Coordenação / Área": "Coordenação Vale",
+    "Sigla": "EXP-VP",
+    "Cargo / Função": "Engenheiro Volta Redonda",
+    "Nome": "Douglas Barreto",
+    "Matrícula": "",
+    "E-mail": "douglas.barreto@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA DO SUBTERRÂNEO
+  // ========================================================================
+
+  // COORDENACAO / AREA: Gerência do Subterrâneo
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Gerência do Subterrâneo",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Leonardo Bersot Barbosa Gois",
+    "Matrícula": "4008761",
+    "E-mail": "leonardo.gois@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Subterrâneo MT
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação Subterrâneo MT",
+    "Sigla": "SUB-MT",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Fillipe Marques Gentil",
+    "Matrícula": "4003927",
+    "E-mail": "fillipe.gentil@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação Subterrâneo MT",
+    "Sigla": "SUB-MT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Rafael da Silva Klippel Bastos",
+    "Matrícula": "4012208",
+    "E-mail": "rafael.bastos@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Subterrâneo BT NET
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação Subterrâneo BT NET",
+    "Sigla": "SUB-BT",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Jose Fernando da Silva Goncalves Junior",
+    "Matrícula": "4002720",
+    "E-mail": "jose.goncalves.junior@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação Subterrâneo BT NET",
+    "Sigla": "SUB-BT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Leonardo de Oliveira Verderio",
+    "Matrícula": "4001926",
+    "E-mail": "leonardo.verderio@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação de Qualidade Subterrâneo
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação de Qualidade Subterrâneo",
+    "Sigla": "SUB-QD",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Daniel Henrique de Figueiredo Alves",
+    "Matrícula": "4011458",
+    "E-mail": "daniel.alves@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência do Subterrâneo",
+    "Coordenação / Área": "Coordenação de Qualidade Subterrâneo",
+    "Sigla": "SUB-QD",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Albert Rodrigues Bizzo",
+    "Matrícula": "4011503",
+    "E-mail": "albert.bizzo@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA DE MANUTENÇÃO CS/SO
+  // ========================================================================
+
+  // COORDENACAO / AREA: Operação e Manutenção Centro Sul + Sudoeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Operação e Manutenção Centro Sul + Sudoeste",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Bruno Almeida da Silva",
+    "Matrícula": "4010503",
+    "E-mail": "bruno.almeida@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Operação Centro Sul
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Operação Centro Sul",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Matheus Aquino da Silveira",
+    "Matrícula": "4012537",
+    "E-mail": "matheus.silveira@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Centro Sul
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Manutenção Centro Sul",
+    "Sigla": "MAN-CS",
+    "Cargo / Função": "Responsável",
+    "Nome": "Abraao Stellet Moret Volotao",
+    "Matrícula": "4012265",
+    "E-mail": "abraao.volotao@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Manutenção Centro Sul",
+    "Sigla": "MAN-CS",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Victor Lobato Arantes",
+    "Matrícula": "4011846",
+    "E-mail": "victor.arantes@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Operação Sudoeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Operação Sudoeste",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Romulo Amaral Silva",
+    "Matrícula": "4007097",
+    "E-mail": "romulo.silva@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Sudoeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Manutenção Sudoeste",
+    "Sigla": "MAN-BA",
+    "Cargo / Função": "Responsável",
+    "Nome": "Richard Ribeiro Frota Santana",
+    "Matrícula": "4005163",
+    "E-mail": "richard.santana@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção CS/SO",
+    "Coordenação / Área": "Manutenção Sudoeste",
+    "Sigla": "MAN-BA",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Luis Fernando Oliveira Guedes",
+    "Matrícula": "4011921",
+    "E-mail": "luis.guedes@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA DE MANUTENÇÃO LE/VP
+  // ========================================================================
+
+  // COORDENACAO / AREA: Operação e Manutenção Vale + Leste
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Operação e Manutenção Vale + Leste",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Alfredo Joao de Brito",
+    "Matrícula": "4010263",
+    "E-mail": "alfredo.brito@light.com.br",
+    "Observação": "Documento denomina Gerência Vale"
+  },
+
+  // COORDENACAO / AREA: Operação Leste
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Operação Leste",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Marcio da Silva Batista",
+    "Matrícula": "4010575",
+    "E-mail": "marcio.batista2@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Leste
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Manutenção Leste",
+    "Sigla": "MAN-LE",
+    "Cargo / Função": "Responsável",
+    "Nome": "Lorena Muniz",
+    "Matrícula": "4005549",
+    "E-mail": "4005549@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Manutenção Leste",
+    "Sigla": "MAN-LE",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Fabricio Jhonny Silva de Almeida",
+    "Matrícula": "4011800",
+    "E-mail": "fabricio.almeida2@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Operação Vale
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Operação Vale",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Monique Ianne Jordao Ferreira",
+    "Matrícula": "4003887",
+    "E-mail": "monique.ferreira@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Operação Vale",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Marcelo Thome",
+    "Matrícula": "",
+    "E-mail": "marcelo.pinto@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Vale
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Manutenção Vale",
+    "Sigla": "MAN-VP",
+    "Cargo / Função": "Responsável",
+    "Nome": "Diogo Alves Paranhos",
+    "Matrícula": "4012495",
+    "E-mail": "diogo.paranhos@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção LE/VP",
+    "Coordenação / Área": "Manutenção Vale",
+    "Sigla": "MAN-VP",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Rogerio Ribeiro da Cruz",
+    "Matrícula": "3144143",
+    "E-mail": "rogerior@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA DE MANUTENÇÃO BX/OE
+  // ========================================================================
+
+  // COORDENACAO / AREA: Operação e Manutenção Baixada + Oeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Operação e Manutenção Baixada + Oeste",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Sabino",
+    "Matrícula": "",
+    "E-mail": "carlos.sabino@light.com.br",
+    "Observação": "Documento denomina Gerência Norte"
+  },
+
+  // COORDENACAO / AREA: Operação Baixada
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Operação Baixada",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Liliane Borba Cruz Rodrigues",
+    "Matrícula": "4011074",
+    "E-mail": "liliane.rodrigues@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Operação Baixada",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Gabriel Mendes de Paula",
+    "Matrícula": "4011910",
+    "E-mail": "gabriel.paula@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Baixada
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Manutenção Baixada",
+    "Sigla": "MAN-BX",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Ido Bomfim de Sant Anna",
+    "Matrícula": "3154378",
+    "E-mail": "ido.santana@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Operação Oeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Operação Oeste",
+    "Sigla": "",
+    "Cargo / Função": "Responsável",
+    "Nome": "Luiz Santana",
+    "Matrícula": "4009716",
+    "E-mail": "luiz.santana@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Operação Oeste",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Diogo Ruas Vaz",
+    "Matrícula": "4011794",
+    "E-mail": "diogo.vaz2@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Manutenção Oeste
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Manutenção Oeste",
+    "Sigla": "MAN-OE",
+    "Cargo / Função": "Responsável",
+    "Nome": "Wallace Coutinho Wollet",
+    "Matrícula": "4006831",
+    "E-mail": "wallace.wollet@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência de Manutenção BX/OE",
+    "Coordenação / Área": "Manutenção Oeste",
+    "Sigla": "MAN-OE",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Gabriel Tardem",
+    "Matrícula": "",
+    "E-mail": "gabriel.tardem@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA EXPANSÃO AT E AUTOMAÇÃO - OTA
+  // ========================================================================
+
+  // COORDENACAO / AREA: Gerência Expansão AT e Automação - OTA
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Gerência Expansão AT e Automação - OTA",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Thiago Pires Viula",
+    "Matrícula": "4000158",
+    "E-mail": "thiago.viula@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação de Construção AT
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação de Construção AT",
+    "Sigla": "OTAC",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Talita Pereira Silva Gonzaga",
+    "Matrícula": "4002702",
+    "E-mail": "talita.pereira@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação de Construção AT",
+    "Sigla": "OTAC",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Roberto Focetola Filho",
+    "Matrícula": "4002033",
+    "E-mail": "roberto.focetola@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação de Construção AT",
+    "Sigla": "OTAC",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Julio Cesar da Costa Marins",
+    "Matrícula": "4005484",
+    "E-mail": "julio.marins@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Automação
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação Automação",
+    "Sigla": "OTAA",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Tiago Lucas Oliveira da Silva",
+    "Matrícula": "4005398",
+    "E-mail": "tiago.silva@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação Automação",
+    "Sigla": "OTAA",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Igor da Rocha Brito",
+    "Matrícula": "4005584",
+    "E-mail": "igor.brito2@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação Automação",
+    "Sigla": "OTAA",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Juliana Lima do Nascimento",
+    "Matrícula": "4004546",
+    "E-mail": "juliana.nascimento@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Expansão AT e Automação - OTA",
+    "Coordenação / Área": "Coordenação Automação",
+    "Sigla": "OTAA",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Rafael Correa Alfradique",
+    "Matrícula": "4010140",
+    "E-mail": "rafael.alfradique2@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: GERÊNCIA MANUTENÇÃO ALTA TENSÃO
+  // ========================================================================
+
+  // COORDENACAO / AREA: Gerência Manutenção Alta Tensão
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Gerência Manutenção Alta Tensão",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Filipe Marques Pereira",
+    "Matrícula": "4002630",
+    "E-mail": "filipe.pereira@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação de Subestações Capital
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Thalisson de Lima Cunha",
+    "Matrícula": "4011636",
+    "E-mail": "thalisson.cunha@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Nicolas Alves Amaral",
+    "Matrícula": "4004933",
+    "E-mail": "nicolas.amaral@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Marcus Vinicius Gouvea Gomes",
+    "Matrícula": "4000043",
+    "E-mail": "marcus.gomes@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Vitor Hugo Mendonca do Nascimento",
+    "Matrícula": "4004944",
+    "E-mail": "vitor.nascimento@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Bruno Marinho Sant Ana",
+    "Matrícula": "4001362",
+    "E-mail": "bruno.santana@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Aluizio Alberto Peixoto Soares",
+    "Matrícula": "3096076",
+    "E-mail": "aluizio.peixoto@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação de Subestações Capital",
+    "Sigla": "MAN-AT",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Julio Cesar da Costa Peres",
+    "Matrícula": "3150127",
+    "E-mail": "julio.peres@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Manutenção Linhas Transmissão
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Geziel Pereira da Silva",
+    "Matrícula": "4002882",
+    "E-mail": "geziel.silva@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Adilson da Costa Menezes Junior",
+    "Matrícula": "3149307",
+    "E-mail": "adilson.menezes@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Manutenção Linhas Transmissão",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Paulo Cesar de Souza",
+    "Matrícula": "3135306",
+    "E-mail": "paulo.souza@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Subestações Metropolitana
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Mauricio de Oliveira Barros",
+    "Matrícula": "4004375",
+    "E-mail": "mauricio.barros@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Wagner Luiz Ortiz Marques",
+    "Matrícula": "4003732",
+    "E-mail": "wagner.marques@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Claudia Maria Graca Araujo",
+    "Matrícula": "3157083",
+    "E-mail": "claudia.araujo@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Bianca Martins Lopes",
+    "Matrícula": "4003593",
+    "E-mail": "bianca.lopes@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Lucas Gomes dos Santos",
+    "Matrícula": "4010763",
+    "E-mail": "lucas.santos4@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Marcio Aurelio Estevao Cerqueira Junior",
+    "Matrícula": "4008774",
+    "E-mail": "marcio.junior3@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Rafael Monteiro Lopes",
+    "Matrícula": "4008456",
+    "E-mail": "rafael.lopes@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Gerência Manutenção Alta Tensão",
+    "Coordenação / Área": "Coordenação Subestações Metropolitana",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Josemar Rodrigues da Silva",
+    "Matrícula": "3150321",
+    "E-mail": "josemar.silva@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: ENGENHARIA
+  // ========================================================================
+
+  // COORDENACAO / AREA: Engenharia
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Engenharia",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Juliana Vieira da Silva Galiza",
+    "Matrícula": "4001316",
+    "E-mail": "juliana.silva@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Dimensionamento Rede MT BT
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Coordenação Dimensionamento Rede MT BT",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Ricardo Linhares Menezes",
+    "Matrícula": "3143210",
+    "E-mail": "ricardo.menezes@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Estudos Projetos Elétricos
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Coordenação Estudos Projetos Elétricos",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Romulo Toledo Dias",
+    "Matrícula": "4010835",
+    "E-mail": "romulo.dias2@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Coordenação Eng. Manutenção Confiabilidade
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Julliana Carolina Passarelli M Costa",
+    "Matrícula": "4008196",
+    "E-mail": "julliana.costa@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Luis Felipe Puzzi Nicolau",
+    "Matrícula": "4010919",
+    "E-mail": "luis.nicolau2@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Engenharia",
+    "Coordenação / Área": "Coordenação Eng. Manutenção Confiabilidade",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Joao Vitor Ribeiro de Carvalho",
+    "Matrícula": "4011810",
+    "E-mail": "joao.carvalho@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: AUTOMAÇÃO
+  // ========================================================================
+
+  // COORDENACAO / AREA: Automação
+  {
+    "Gerência consolidada": "Automação",
+    "Coordenação / Área": "Automação",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Tiago Lucas Oliveira da Silva",
+    "Matrícula": "4005398",
+    "E-mail": "tiago.silva@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Automação",
+    "Coordenação / Área": "Automação",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Matheus Reis Duarte Monteiro",
+    "Matrícula": "4009475",
+    "E-mail": "matheus.monteiro@light.com.br",
+    "Observação": ""
+  },
+
+  // ========================================================================
+  // GERENCIA: COMERCIAL
+  // ========================================================================
+
+  // COORDENACAO / AREA: Comercial
+  {
+    "Gerência consolidada": "Comercial",
+    "Coordenação / Área": "Comercial",
+    "Sigla": "",
+    "Cargo / Função": "Gerente",
+    "Nome": "Fernando Maruyama Dal Maso",
+    "Matrícula": "4006282",
+    "E-mail": "fernando.maruyama@light.com.br",
+    "Observação": ""
+  },
+
+  // COORDENACAO / AREA: Blindagem
+  {
+    "Gerência consolidada": "Comercial",
+    "Coordenação / Área": "Blindagem",
+    "Sigla": "",
+    "Cargo / Função": "Coordenador",
+    "Nome": "Murilo Savio Barbosa",
+    "Matrícula": "4011885",
+    "E-mail": "murilo.barbosa@light.com.br",
+    "Observação": ""
+  },
+  {
+    "Gerência consolidada": "Comercial",
+    "Coordenação / Área": "Blindagem",
+    "Sigla": "",
+    "Cargo / Função": "Engenheiro",
+    "Nome": "Diogo Ferreira Pereira",
+    "Matrícula": "4006291",
+    "E-mail": "diogo.pereira2@light.com.br",
+    "Observação": ""
+  }
+];
 
 /* 2. NOMES DOS CAMPOS UTILIZADOS NA BASE */
 const fields={g:'Gerência consolidada',c:'Coordenação / Área',s:'Sigla',f:'Cargo / Função',n:'Nome',m:'Matrícula',e:'E-mail',o:'Observação'};
