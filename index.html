@@ -1070,13 +1070,22 @@ function organizarHierarquia(registro){
     else if(sigla==="EXP-BX" || sigla==="EXP-OE") registro["Gerência consolidada"]="Gerência BX/OE";
   }
 
-  // Classificacao da area, usada no novo filtro e na nova coluna
-  if(/^Operação/i.test(coordenacao)) registro["Área"]="Operação";
-  else if(/^Manutenção/i.test(coordenacao)) registro["Área"]="Manutenção";
-  else if(/^Coordenação/i.test(coordenacao) && /^EXP-/i.test(sigla)) registro["Área"]="Expansão";
-  else if(gerenciaOriginal==="Gerência de Expansão") registro["Área"]="Expansão";
-  else if(/Operação e Manutenção/i.test(coordenacao)) registro["Área"]="Gerência";
-  else registro["Área"]="Outras áreas";
+  // Classificacao da area pelo nome da coordenacao.
+  if(/Operação e Manutenção/i.test(coordenacao)) registro["Área"]="Operação e Manutenção";
+  else if(/Manutenção/i.test(coordenacao)) registro["Área"]="Manutenção";
+  else if(/Operação/i.test(coordenacao)) registro["Área"]="Operação";
+  else if(/Expansão/i.test(coordenacao) || /^EXP-/i.test(sigla) || gerenciaOriginal==="Gerência de Expansão") registro["Área"]="Expansão";
+  else if(/Subterrâneo/i.test(coordenacao)) registro["Área"]="Subterrâneo";
+  else if(/Subestações/i.test(coordenacao)) registro["Área"]="Subestações";
+  else if(/Automação/i.test(coordenacao)) registro["Área"]="Automação";
+  else if(/Blindagem/i.test(coordenacao)) registro["Área"]="Blindagem";
+  else if(/Comercial/i.test(coordenacao)) registro["Área"]="Comercial";
+  else if(/Engenharia/i.test(coordenacao) || /^Engenharia$/i.test(coordenacao)) registro["Área"]="Engenharia";
+  else if(/Estudos Projetos Elétricos/i.test(coordenacao)) registro["Área"]="Estudos e Projetos Elétricos";
+  else if(/Dimensionamento Rede/i.test(coordenacao)) registro["Área"]="Dimensionamento de Rede";
+  else if(/Construção AT/i.test(coordenacao)) registro["Área"]="Construção AT";
+  else if(/Qualidade/i.test(coordenacao)) registro["Área"]="Qualidade";
+  else registro["Área"]=coordenacao.replace(/^Coordenação\s+(de\s+)?/i,"").replace(/^Gerência\s+(de\s+|do\s+)?/i,"").trim() || "Outras áreas";
 }
 DATA.forEach(organizarHierarquia);
 
